@@ -1,0 +1,17 @@
+/* Importamos una tipografia de google */
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+
+/* Definimos los estilos del timer */
+#timer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 6em;
+  font-family: "Sofia Sans", sans-serif;
+}
