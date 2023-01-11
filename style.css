@@ -1,6 +1,13 @@
 /* Importamos una tipografia de google */
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
 
+/* Reset de css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 /* Definimos los estilos del timer */
 #timer {
   display: flex;
