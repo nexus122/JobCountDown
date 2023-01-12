@@ -28,9 +28,11 @@ function startTimer() {
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
     timer.innerHTML = hours + ":" + minutes + ":" + seconds;
+    document.title = hours + ":" + minutes + ":" + seconds;
 
     if (duration <= 0) {
       timer.innerHTML = 'Vete a casa'
+      document.title = 'Vete a casa'
       clearInterval(repeater);
     }
   }, 1000);
