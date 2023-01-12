@@ -1,5 +1,5 @@
 /* Importamos una tipografia de google */
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* Reset de css */
 * {
@@ -20,5 +20,5 @@
   align-items: center;
   justify-content: center;
   font-size: 6em;
-  font-family: "Sofia Sans", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
