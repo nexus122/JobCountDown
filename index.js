@@ -15,27 +15,26 @@ if (day === 5) {
 
 function startTimer() {
   let timer = document.getElementById("timer");
-  let minutes, seconds;
-
+  let hours, minutes, seconds;
   let repeater = setInterval(function () {
     let currentTime = new Date().getTime();
     let duration = (endTime - currentTime) / 1000;
+    hours = parseInt(duration / 3600);
+    minutes = parseInt((duration % 3600) / 60);
+    seconds = parseInt(duration % 60);
 
-    minutes = parseInt(duration / 60, 10);
-    seconds = parseInt(duration % 60, 10);
-
+    hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    timer.innerHTML = minutes + ":" + seconds;
-    console.log(duration);
+    timer.innerHTML = hours + ":" + minutes + ":" + seconds;
+
     if (duration <= 0) {
+      timer.innerHTML = 'Vete a casa'
       clearInterval(repeater);
-      timer.innerHTML = `        
-        <p>Vete a casa</p>
-      `;
     }
   }, 1000);
 }
+
 
 startTimer();
