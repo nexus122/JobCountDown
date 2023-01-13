@@ -7,6 +7,7 @@ endTime = endTime.getTime();
 // que dia de la semana es hoy
 let day = new Date().getDay();
 if (day === 5) {
+  endTime = new Date();
   endTime.setHours(15);
   endTime.setMinutes(00);
   endTime.setSeconds(0);
